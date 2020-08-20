@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { LightningElement, track, api, wire } from 'lwc';
 import { getRecord } from 'lightning/uiRecordApi';
-import fetchDataHelper from './muleSoftRelatedRecordsHelper.js';
+import fetchDataHelper from './muleSoftRelatedRecordsTableHelper.js';
 
 export default class MuleRelatedRecordsTable extends LightningElement {
     @api recordId; // automatically store record id current record
