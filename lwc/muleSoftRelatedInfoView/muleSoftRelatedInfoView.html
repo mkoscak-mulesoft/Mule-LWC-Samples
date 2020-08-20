@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title={cardTitle} icon-name="utility:connected_apps">
+        <div if:true={isLoaded}>
+            <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+        </div>
+        <div style="max-height: 500px;">
+            <lightning-datatable
+                    column-widths-mode="auto"
+                    hide-checkbox-column="true" 
+                    key-field="id"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+        </div>
+     </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+       <target>lightning__AppPage</target>
+       <target>lightning__RecordPage</target>
+       <target>lightning__HomePage</target>
+   </targets>
+   <targetConfigs>
+    <targetConfig targets="lightning__HomePage,lightning__RecordPage">
+        <property name="cardTitle" type="String" label="Enter the title for the card"/>
+        <property name="muleURIBase" type="String" label="Enter the base URI Mule API endpoint"/>
+        <property name="passRelatedRecord" type="Boolean" label="Are you passing a record field to the endpoint?"/>
+        <property name="muleURIExtended" type="String" label="If passing an id to the URI, use this field to add additional text to the URI after that value."/>
+        <property name="objectApiName" type="String" label="Enter the API name of the object"/>
+        <property name="relatedRecordId" type="String" label="Enter the API name of the field storing the related record Id"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
