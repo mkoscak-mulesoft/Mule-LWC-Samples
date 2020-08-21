@@ -48,7 +48,7 @@ See below for an image of how it looks (image is related info view component)
 <br/><br/>
 ## FAQ
 **Is there a difference between Lightning Components and Lightning Web Components?**<br/>
-Yes, they are different development frameworks.  Both are similar, but LWC is based more on the Web Components JavaScript framework.  Lightning Components are older and Salesforce is moving towards LWC.  If you are looking at online documentation and blogs and see aura, it is the older Lightning Components.  https://www.salesforceben.com/lightning-web-components-vs-lightning-components-everything-you-need-to-know/<br/>
+Yes, they are different development frameworks.  Both are similar, but LWC is based more on the Web Components JavaScript framework.  Lightning Components are older and Salesforce is moving towards LWC.  If you are looking at online documentation and blogs and see aura, it is the older Lightning Components.  https://www.salesforceben.com/lightning-web-components-vs-lightning-components-everything-you-need-to-know/<br/><br/>
 **Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
 For security Salesforce will block if you do not use HTTPS so *you cannot use HTTP.*<br/><br/>
 **The component is not rendering.  How can I debug?**<br/>
