@@ -52,7 +52,7 @@ Yes, they are different development frameworks.  Both are similar, but LWC is ba
 **Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
 For security Salesforce will block if you do not use HTTPS so *you cannot use HTTP.*<br/><br/>
 **The component is not rendering.  How can I debug?**<br/>
-Use the javascript console to view errors.<br/><br/>
+Use the browser JavaScript console to view errors.<br/><br/>
 **I'm getting an error about CSP or Content Security Policy, where should I look?**<br/>
 Check above in the instructions on configuring CSP.  It takes Salesforce 15-45 minutes to pick up changes to this so try waiting.  Note that for localhost you must add the port (ie :8082), and for CloudHub you can ignore the port.  Follow the formatting in the instructions above.<br/><br/>
 **I'm getting a CORS error, where do we fix this?**<br/>
