@@ -13,7 +13,7 @@ Use this to display a table of key value pairs.  This is best for displaying a s
 Use this to display a table of related values.  This is best for displaying a list of related records.<br/>
 <br/>
 
-## Installation & Pre-Configuration
+## Salesforce LWC Installation & Pre-Configuration
 1) Use the Deploy to Salesforce button on this page to install the Lightning Web Components into your Salesforce instance.
 2) Ensure my domain is turned on and activated for the org.  Search "My Domain" in Salesforce setup page.<br/>https://help.salesforce.com/articleView?id=domain_name_overview.htm&type=5
 3) Create CSP Trusted Sites (Note: this step takes 15-45 minutes to kick in after enabled. There is no alert when ready).  In Salesforce Setup, search "CSP Trusted Sites".  Create a new trusted site named LocalHost with Trusted Site URL set to https://localhost:8082 and all other settings left to default.  Create a second CSP trusted site with the URL of your app deployed to CloudHub if you wish to demo with CloudHub (ie https://lwc-demo-app-mk.us-e2.cloudhub.io).
@@ -47,8 +47,10 @@ See below for an image of how it looks (image is related info view component)
 
 <br/><br/>
 ## FAQ
+**Is there a difference between Lightning Components and Lightning Web Components**<br/>
+Yes, they are different development frameworks.  Both are similar, but LWC is based more on the Web Components JavaScript framework.  Lightning Components are older and Salesforce is moving towards LWC.  If you are looking at online documentation and blogs and see aura, it is the older Lightning Components.  https://www.salesforceben.com/lightning-web-components-vs-lightning-components-everything-you-need-to-know/
 **Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
-For security Salesforce will block if you do not use HTTPS so you cannot use HTTP.<br/><br/>
+For security Salesforce will block if you do not use HTTPS so *you cannot use HTTP.*<br/><br/>
 **The component is not rendering.  How can I debug?**<br/>
 Use the javascript console to view errors.<br/><br/>
 **I'm getting an error about CSP or Content Security Policy, where should I look?**<br/>
