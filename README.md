@@ -6,10 +6,10 @@
 # MuleSoft Lightning Web Components
 
 This repository contains code that can be used to demonstrate how Salesforce Lightning Web Components can be used as a frontend for displaying data from APIs delivered with Mule.  Currently there are 2 generic components for demonstration:<br/>
-	1) Related Info View (Single Record)<br/>
-		- Use this to display a table of key value pairs.  This is best for displaying a single related record or a list of related information.<br/>
-	2) Related Table View (Multi/Child Records)<br/>
-		- Use this to display a table of related values.  This is best for displaying a list of related records.<br/>
+**1) Related Info View (Single Record)**<br/>
+Use this to display a table of key value pairs.  This is best for displaying a single related record or a list of related information.<br/>
+**Related Table View (Multi/Child Records)**<br/>
+Use this to display a table of related values.  This is best for displaying a list of related records.<br/>
 <br/>
 
 ## Installation & Pre-Configuration
@@ -44,7 +44,7 @@ Use this field to denote what you are passing in the URI (ie AccountNumber or Cu
 See below for an image of how it looks (image is related info view component)
 ![](images/RelatedInfoView.png)
 
-<br/><br/><br/>
+<br/><br/>
 ## FAQ
 **Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
 For security Salesforce will block if you do not use HTTPS so you cannot use HTTP.<br/><br/>
