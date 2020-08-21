@@ -36,10 +36,10 @@ For my example it is '/credit-check'.  This field is only relevant if you marked
 Enter the developer API name of the object the page is on (ie Account or Loan__c).<br/><br/>
 **Enter the API name of the field storing the related record id.**<br/>
 Use this field to denote what you are passing in the URI (ie AccountNumber or CustomField__c). This field will be pulled from the record you have open and injected into the URL for mule.<br/>
-<br/>
+<br/><br/>
 *A note about the URI: If the Add Record Field flag is left unchecked, the component will callout to only the base endpoint you defined.  If that flag is marked true, the app will callout to a concatenation of Base URI + Dynamic Record Field + Appended Text.  So for the example given here it is calling to https://lwc-demo-app-mk.us-e2.cloudhub.io/api/account/12345/credit-check*
 
-<br/><br/>
+<br/><br/><br/>
 ## Installation Complete!!
 See below for an image of how it looks (image is related info view component)
 ![](images/RelatedInfoView.png)
