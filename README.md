@@ -28,7 +28,7 @@ Now, click on the component to begin configuring parameters on the right side of
 **Enter title for the card**<br/>
 Set the card header (ie Credit Info)<br/><br/>
 **Enter the base URI of your mule application**<br/>
-Set the base endpoint of your mule app (include /api/path.  For my example it is 'https://lwc-demo-app-mk.us-e2.cloudhub.io/api/account/'). Note that the '/' character likely must be used at the end.<br/><br/>
+Set the base endpoint of your mule app (include /api/path/.  For my example it is 'https://lwc-demo-app-mk.us-e2.cloudhub.io/api/account/'). Note that the '/' character likely must be used at the end.<br/><br/>
 **Are you passing a record field to the endpoint?**<br/>
 If you wish to pass one of the fields such as an external id in the URL, mark this as true<br/><br/>
 **If passing an id to the URI, set this field to append additional text to the URI after that dynamic value.**<br/> 
@@ -49,6 +49,8 @@ See below for an image of how it looks (image is related info view component)
 ## FAQ
 **Is there a difference between Lightning Components and Lightning Web Components?**<br/>
 Yes, they are different development frameworks.  Both are similar, but LWC is based more on the Web Components JavaScript framework.  Lightning Components are older and Salesforce is moving towards LWC.  If you are looking at online documentation and blogs and see aura, it is the older Lightning Components.  https://www.salesforceben.com/lightning-web-components-vs-lightning-components-everything-you-need-to-know/<br/><br/>
+**Do I have to query a related record?**<br/>
+Nope.  Leave the 'Are you passing a record field to the endpoint?' flag marked false and it will not pass a parameter.  This can be good if you want to add the component to Salesforce home page.<br/>
 **Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
 For security Salesforce will block if you do not use HTTPS so *you cannot use HTTP.*<br/><br/>
 **The component is not rendering.  How can I debug?**<br/>
