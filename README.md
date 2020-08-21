@@ -44,6 +44,18 @@ Use this field to denote what you are passing in the URI (ie AccountNumber or Cu
 See below for an image of how it looks (image is related info view component)
 ![](images/RelatedInfoView.png)
 
+<br/><br/><br/>
+## FAQ
+**Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
+For security Salesforce will block if you do not use HTTPS so you cannot use HTTP.<br/>
+**The component is not rendering.  How can I debug?**<br/>
+Use the javascript console to view errors.
+**I'm getting an error about CSP or Content Security Policy, where should I look?**<br/>
+Check above in the instructions on configuring CSP.  It takes Salesforce 15-45 minutes to pick up changes to this so try waiting.  Note that for localhost you must add the port (ie :8082), and for CloudHub you can ignore the port.  Follow the formatting in the instructions above.<br/>
+**I'm getting a CORS error, where do we fix this?**
+You must configure this in the mule app you callout to or Salesforce will block your call.  See the linked sample project to view how this is configured, but you must add the following to your response call headers for your HTTP Listener:
+![](images/CORS.png)
+
 
 
 
