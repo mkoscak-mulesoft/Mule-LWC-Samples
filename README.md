@@ -25,16 +25,16 @@ On the edit page menu, on the left side menu scroll to the bottom to find muleSo
 ![](images/LWC_Config.png)
 Now, click on the component to begin configuring parameters on the right side of the screen.  Set the following attributes with parameters:
 Enter title for the card: 
-- Set the card header (ie Credit Info)
-Enter the base URI of your mule application
-- Set the base endpoint of your mule app (include /api/path.  For my example it is 'https://lwc-demo-app-mk.us-e2.cloudhub.io/api/account/'). Note that the '/' character likely must be used at the end.
-Are you passing a record field to the endpoint?
-- If you wish to pass one of the fields such as an external id in the URL, mark this as true
-If passing an id to the URI, set this field to append additional text to the URI after that dynamic value. (for my example it is '/credit-check'.  This field is only relevant if you marked the checkbox above true, and can be blank if the last part of the URI is the external id).  Note that the '/' character likely must be used at the start.
-Enter the API Name of the object
-- Enter the developer API name of the object the page is on (ie Account or Loan__c).
-Enter the API name of the field storing the related record id.
-- Use this field to denote what you are passing in the URI (ie AccountNumber or CustomField__c).  This field will be pulled from the record you have open and injected into the URL for mule.
+- Set the card header (ie Credit Info)<br/>
+Enter the base URI of your mule application<br/>
+- Set the base endpoint of your mule app (include /api/path.  For my example it is 'https://lwc-demo-app-mk.us-e2.cloudhub.io/api/account/'). Note that the '/' character likely must be used at the end.<br/>
+Are you passing a record field to the endpoint?<br/>
+- If you wish to pass one of the fields such as an external id in the URL, mark this as true<br/>
+If passing an id to the URI, set this field to append additional text to the URI after that dynamic value. (for my example it is '/credit-check'.  This field is only relevant if you marked the checkbox above true, and can be blank if the last part of the URI is the external id).  Note that the '/' character likely must be used at the start.<br/>
+Enter the API Name of the object<br/>
+- Enter the developer API name of the object the page is on (ie Account or Loan__c).<br/>
+Enter the API name of the field storing the related record id.<br/>
+- Use this field to denote what you are passing in the URI (ie AccountNumber or CustomField__c). <br/> This field will be pulled from the record you have open and injected into the URL for mule.<br/>
 
 
 
