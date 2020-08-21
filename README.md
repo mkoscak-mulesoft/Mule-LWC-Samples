@@ -43,7 +43,7 @@ Use this field to denote what you are passing in the URI (ie AccountNumber or Cu
 <br/><br/><br/>
 ## Installation Complete!!
 See below for an image of how it looks (image is related info view component)
-![](images/RelatedInfoView.png)
+![](images/RelatedInfoComponent.png)
 
 <br/><br/>
 ## FAQ
