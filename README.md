@@ -5,8 +5,8 @@
 
 # MuleSoft Lightning Web Components
 
-This repository contains code that can be used to demonstrate how Salesforce Lightning Web Components can be used as a frontend for displaying data from APIs delivered with Mule.  The total setup time from within Salesforce is about 30-60 minutes.  Time spent standing up the Mule app will vary based on use case.<br/>
-Currently there are 2 generic components for demonstration:<br/><br/>
+This repository contains code that can be used to demonstrate how Salesforce Lightning Web Components can be used as a frontend for displaying data from APIs delivered with Mule.  The total setup time from within Salesforce is about 30-60 minutes.  Time spent standing up the Mule app will vary based on use case.<br/><br/>
+Currently there are 2 generic components for demonstration:<br/>
 **1) Related Info View (Single Record)**<br/>
 Use this to display a table of key value pairs.  This is best for displaying a single related record or a list of related information.<br/>
 **Related Table View (Multi/Child Records)**<br/>
