@@ -23,8 +23,8 @@ The configuration steps are the same for both components.  Navigate to a page wi
 
 On the edit page menu, on the left side menu scroll to the bottom to find muleSoftRelatedInfoView and muleSoftRelatedRecordsTable.  Drag one of the components onto the page as shown in the image below.<br/>
 ![](images/LWC_Config.png)
-Now, click on the component to begin configuring parameters on the right side of the screen.  Set the following attributes with parameters:<br/>
-**Enter title for the card**
+Now, click on the component to begin configuring parameters on the right side of the screen.  Set the following attributes with parameters:<br/><br/>
+**Enter title for the card**<br/>
 - Set the card header (ie Credit Info)<br/>
 **Enter the base URI of your mule application**<br/>
 - Set the base endpoint of your mule app (include /api/path.  For my example it is 'https://lwc-demo-app-mk.us-e2.cloudhub.io/api/account/'). Note that the '/' character likely must be used at the end.<br/>
