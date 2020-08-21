@@ -36,6 +36,11 @@ Enter the API Name of the object<br/>
 Enter the API name of the field storing the related record id.<br/>
 - Use this field to denote what you are passing in the URI (ie AccountNumber or CustomField__c). <br/> This field will be pulled from the record you have open and injected into the URL for mule.<br/>
 
+<br/><br/>
+## Installation Complete!!
+See below for an image of how it looks (image is related info view component)
+![](images/RelatedInfoView.png)
+
 
 
 
