@@ -35,7 +35,7 @@ For my example it is '/credit-check'.  This field is only relevant if you marked
 **Enter the API Name of the object**<br/>
 Enter the developer API name of the object the page is on (ie Account or Loan__c).<br/><br/>
 **Enter the API name of the field storing the related record id.**<br/>
-Use this field to denote what you are passing in the URI (ie AccountNumber or CustomField__c). <br/><br/> This field will be pulled from the record you have open and injected into the URL for mule.<br/>
+Use this field to denote what you are passing in the URI (ie AccountNumber or CustomField__c). This field will be pulled from the record you have open and injected into the URL for mule.<br/>
 
 <br/><br/>
 ## Installation Complete!!
