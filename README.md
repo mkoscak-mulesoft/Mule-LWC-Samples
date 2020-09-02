@@ -6,6 +6,15 @@
 # MuleSoft Lightning Web Components
 
 This repository contains code that can be used to demonstrate how Salesforce Lightning Web Components can be used as a frontend for displaying data from APIs delivered with Mule.  The total setup time from within Salesforce is about 30-60 minutes.  Time spent standing up the Mule app will vary based on use case.<br/><br/>
+## ReadMe Contents
+1) Package Summary<br/>
+2) Mule App Formatting Notes<br/>
+3) Salesforce Pre-Installation Notes<br/>
+4) Salesforce Configuration<br/>
+5) FAQ
+<br/><br/>
+
+## 1) Package Summary
 Currently there are 2 generic components for demonstration:<br/>
 **1) Related Info View (Single Record)**<br/>
 Use this to display a table of key value pairs.  This is best for displaying a single related record or a list of related information.<br/>
@@ -15,7 +24,7 @@ Use this to display a table of related values.  This is best for displaying a li
 ![](images/RelatedTable.png)<br/>
 <br/>
 
-## Mule App Structure
+## 2) Mule App Formatting Notes
 Link to sample Mule app:<br/>
 https://github.com/mkoscak-mulesoft/Mule-LWC-eapi<br/>
 The format you pass the data is critical to the LWC correctly rendering.  You can find a sample of the formatting in the linked Mule project's transformation components.  Each component's format is as follows:<br/>
@@ -47,7 +56,7 @@ This needs to return an array of 1 level deep json objects.  Use format below<br
 ```
 
 
-## Salesforce LWC Installation & Pre-Configuration
+## 3) Salesforce Pre-Installation Notes
 1) Use the Deploy to Salesforce button on this page to install the Lightning Web Components into your Salesforce instance.
 2) Ensure my domain is turned on and activated for the org.  Search "My Domain" in Salesforce setup page.<br/>https://help.salesforce.com/articleView?id=domain_name_overview.htm&type=5
 3) Create CSP Trusted Sites (Note: this step takes 15-45 minutes to kick in after enabled. There is no alert when ready).  In Salesforce Setup, search "CSP Trusted Sites".  Create a new trusted site named LocalHost with Trusted Site URL set to https://localhost:8082 and all other settings left to default.  Create a second CSP trusted site with the URL of your app deployed to CloudHub if you wish to demo with CloudHub (ie https://lwc-demo-app-mk.us-e2.cloudhub.io).
@@ -66,7 +75,7 @@ Option 2: Manually return the appropriate headers in your Mule app.  Add the bel
 ```
 ![](images/CORS.png)
 
-## Configuring the Components
+## 4) Salesforce Configuration
 The configuration steps are the same for both components.  Navigate to a page within Salesforce Lightning and use the gear icon at the top right to select edit page.  This will likely be done on a record page (of any object, but should be able to be done from a main/home page as well).<br/>
 
 On the edit page menu, on the left side menu scroll to the bottom to find muleSoftRelatedInfoView and muleSoftRelatedRecordsTable.  Drag one of the components onto the page as shown in the image below.<br/>
@@ -93,7 +102,7 @@ See below for an image of how it looks (image is related info view component)
 ![](images/RelatedInfoComponent.png)
 
 <br/><br/>
-## FAQ
+## 5) FAQ
 **Is there a difference between Lightning Components and Lightning Web Components?**<br/>
 Yes, they are different development frameworks.  Both are similar, but LWC is based more on the Web Components JavaScript framework.  Lightning Components are older and Salesforce is moving towards LWC.  If you are looking at online documentation and blogs and see aura, it is the older Lightning Components.  https://www.salesforceben.com/lightning-web-components-vs-lightning-components-everything-you-need-to-know/<br/><br/>
 **Do I have to query a related record?**<br/>
