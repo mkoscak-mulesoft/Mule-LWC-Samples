@@ -24,12 +24,12 @@ Salesforce will validate CORS and so you must setup your Mule app to handle this
 1) Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource. 
 ![](images/CORS_APIM.png)<br/>
 2) Manually return the appropriate headers in your Mule app.  Add <br/>
-'''JSON
+```json
 {
 	"Access-Control-Allow-Origin": "*",
 	"Access-Control-Request-Method": "GET"
 }
-'''
+```
 
 ## Configuring the Components
 The configuration steps are the same for both components.  Navigate to a page within Salesforce Lightning and use the gear icon at the top right to select edit page.  This will likely be done on a record page (of any object, but should be able to be done from a main/home page as well).<br/>
