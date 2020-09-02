@@ -40,7 +40,7 @@ This needs to return a 1 level deep json object.  Use format below<br/>
 }
 ```
 **Related Table View:**<br/>
-This needs to return an array of 1 level deep json objects.  Use format below<br/>
+This needs to return an array of 1 level deep json objects.  The table will use the keys as the column headers, as such it is critical keys are consistent through the array.  Use format below<br/>
 ```json
 [
 	{
