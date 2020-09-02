@@ -38,7 +38,7 @@ This needs to return an array of 1 level deep json objects.  Use format below<br
 	{
 		"Key-1": "Value 5",
 		"Key-2": "Value 6"
-	},
+	}
 ]
 ```
 
