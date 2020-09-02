@@ -22,7 +22,7 @@ Use this to display a table of key value pairs.  This is best for displaying a s
 **2) Related Table View (Multi/Child Records)**<br/>
 Use this to display a table of related values.  This is best for displaying a list of related records.
 ![](images/RelatedTable.png)<br/>
-<br/>
+<br/><br/>
 
 ## 2) Mule App Formatting Notes
 Link to sample Mule app:<br/>
@@ -54,7 +54,7 @@ This needs to return an array of 1 level deep json objects.  Use format below<br
 	}
 ]
 ```
-
+<br/><br/><br/>
 
 ## 3) Salesforce Pre-Installation Notes
 1) Use the Deploy to Salesforce button on this page to install the Lightning Web Components into your Salesforce instance.
@@ -74,6 +74,7 @@ Option 2: Manually return the appropriate headers in your Mule app.  Add the bel
 }
 ```
 ![](images/CORS.png)
+<br/><br/><br/>
 
 ## 4) Salesforce Configuration
 The configuration steps are the same for both components.  Navigate to a page within Salesforce Lightning and use the gear icon at the top right to select edit page.  This will likely be done on a record page (of any object, but should be able to be done from a main/home page as well).<br/>
