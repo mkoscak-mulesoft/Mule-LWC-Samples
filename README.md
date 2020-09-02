@@ -6,7 +6,7 @@
 # MuleSoft Lightning Web Components
 
 This repository contains code that can be used to demonstrate how Salesforce Lightning Web Components can be used as a frontend for displaying data from APIs delivered with Mule.  The example I use is for credit info and loans, but the LWC will display whatever fields you pass back from your Mule API so you can customize the demo for a client.<br/>
-The total setup time from within Salesforce is about 30-60 minutes.  Time spent standing up the Mule app will vary based on use case.<br/>
+The total setup time from within Salesforce is about 30-60 minutes.  Time spent standing up the Mule app will vary based on use case but should be quick.<br/>
 Find an example Mule API with formatting linked here: https://github.com/mkoscak-mulesoft/Mule-LWC-eapi
 <br/><br/>
 ## ReadMe Contents
