@@ -15,7 +15,7 @@ Use this to display a table of related values.  This is best for displaying a li
 
 ## Mule App Structure
 Link to sample Mule app:<br/>
-https://github.com/mkoscak-mulesoft/Mule-LWC-eapi
+https://github.com/mkoscak-mulesoft/Mule-LWC-eapi<br/>
 The format you pass the data is critical to the LWC correctly rendering.  You can find a sample of the formatting in the linked Mule project's transformation components.  Each component's format is as follows:<br/>
 **Related Info View:**<br/>
 This needs to return a 1 level deep json object.  Use format below<br/>
