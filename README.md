@@ -23,13 +23,14 @@ Use this to display a table of related values.  This is best for displaying a li
 Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately.  It can be done one of 2 ways.<br/>
 1) Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource. 
 ![](images/CORS_APIM.png)<br/>
-2) Manually return the appropriate headers in your Mule app.  Add <br/>
+2) Manually return the appropriate headers in your Mule app.  Add the below headers to your HTTP response<br/>
 ```json
 {
 	"Access-Control-Allow-Origin": "*",
 	"Access-Control-Request-Method": "GET"
 }
 ```
+![](images/CORS.png)
 
 ## Configuring the Components
 The configuration steps are the same for both components.  Navigate to a page within Salesforce Lightning and use the gear icon at the top right to select edit page.  This will likely be done on a record page (of any object, but should be able to be done from a main/home page as well).<br/>
@@ -69,9 +70,7 @@ For security Salesforce will block if you do not use HTTPS so *you cannot use HT
 Use the browser JavaScript console to view errors.<br/><br/>
 **I'm getting an error about CSP or Content Security Policy, where should I look?**<br/>
 Check above in the instructions on configuring CSP.  It takes Salesforce 15-45 minutes to pick up changes to this so try waiting.  Note that for localhost you must add the port (ie :8082), and for CloudHub you can ignore the port.  Follow the formatting in the instructions above.<br/><br/>
-**I'm getting a CORS error, where do we fix this?**<br/>
-You must configure this in the mule app you callout to or Salesforce will block your call.  See the linked sample project to view how this is configured, but you must add the following to your response call headers for your HTTP Listener:
-![](images/CORS.png)
+
 
 
 
