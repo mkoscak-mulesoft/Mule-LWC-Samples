@@ -21,9 +21,9 @@ Use this to display a table of related values.  This is best for displaying a li
 <br/><br/>
 **CORS Config**<br/>
 Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately.  It can be done one of 2 ways.<br/>
-1) Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource. 
+Option 1: Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource. 
 ![](images/CORS_APIM.png)<br/>
-2) Manually return the appropriate headers in your Mule app.  Add the below headers to your HTTP response<br/>
+Option 2: Manually return the appropriate headers in your Mule app.  Add the below headers to your HTTP response<br/>
 ```json
 {
 	"Access-Control-Allow-Origin": "*",
