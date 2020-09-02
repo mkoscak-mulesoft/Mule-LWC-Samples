@@ -20,7 +20,7 @@ Use this to display a table of related values.  This is best for displaying a li
 ![](images/CloudHubCSP.png)
 <br/><br/>
 4) **CORS Config**<br/>
-Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately.  It can be done one of 2 ways.<br/>
+Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately.  It can be done one of 2 ways.<br/><br/>
 Option 1: Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource. 
 ![](images/CORS_APIM.png)<br/>
 Option 2: Manually return the appropriate headers in your Mule app.  Add the below headers to your HTTP response<br/>
@@ -63,7 +63,7 @@ See below for an image of how it looks (image is related info view component)
 **Is there a difference between Lightning Components and Lightning Web Components?**<br/>
 Yes, they are different development frameworks.  Both are similar, but LWC is based more on the Web Components JavaScript framework.  Lightning Components are older and Salesforce is moving towards LWC.  If you are looking at online documentation and blogs and see aura, it is the older Lightning Components.  https://www.salesforceben.com/lightning-web-components-vs-lightning-components-everything-you-need-to-know/<br/><br/>
 **Do I have to query a related record?**<br/>
-Nope.  Leave the 'Are you passing a record field to the endpoint?' flag marked false and it will not pass a parameter.  This can be good if you want to add the component to Salesforce home page.<br/>
+Nope.  Leave the 'Are you passing a record field to the endpoint?' flag marked false and it will not pass a parameter.  This can be good if you want to add the component to Salesforce home page.<br/><br/>
 **Does this have to be an HTTPS endpoint or can I use HTTP?**<br/>
 For security Salesforce will block if you do not use HTTPS so *you cannot use HTTP.*<br/><br/>
 **The component is not rendering.  How can I debug?**<br/>
