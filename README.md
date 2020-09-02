@@ -13,6 +13,36 @@ Use this to display a table of key value pairs.  This is best for displaying a s
 Use this to display a table of related values.  This is best for displaying a list of related records.<br/>
 <br/>
 
+## Mule App Structure
+The format you pass the data is critical to the LWC correctly rendering.  You can find a sample of the formatting in the linked Mule project's transformation components.  Each component's format is as follows:<br/>
+**Related Info View:**<br/>
+This needs to return a 1 level deep json object.  Use format below<br/>
+```json
+{
+	"Key-1": "Value 1",
+	"Key-2": "Value 2"
+}
+```
+**Related Table View:**<br/>
+This needs to return an array of 1 level deep json objects.  Use format below<br/>
+```json
+[
+	{
+		"Key-1": "Value 1",
+		"Key-2": "Value 2"
+	},
+	{
+		"Key-1": "Value 3",
+		"Key-2": "Value 4"
+	},
+	{
+		"Key-1": "Value 5",
+		"Key-2": "Value 6"
+	},
+]
+```
+
+
 ## Salesforce LWC Installation & Pre-Configuration
 1) Use the Deploy to Salesforce button on this page to install the Lightning Web Components into your Salesforce instance.
 2) Ensure my domain is turned on and activated for the org.  Search "My Domain" in Salesforce setup page.<br/>https://help.salesforce.com/articleView?id=domain_name_overview.htm&type=5
