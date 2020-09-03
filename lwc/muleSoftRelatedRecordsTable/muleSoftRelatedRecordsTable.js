@@ -43,6 +43,7 @@ export default class MuleRelatedRecordsTable extends LightningElement {
     // wire function 
     @wire(getRecord, { recordId: '$recordId', fields: '$externalFieldName' })
     wiredRecord({ data, error }) {
+        console.log('enter wired record');
         if (data) {
             this.record = [...Object.keys(data.fields).map(key => {
                 return data.fields[key].value;
@@ -58,12 +59,25 @@ export default class MuleRelatedRecordsTable extends LightningElement {
     async connectedCallback() {
         // if passing field as related Id, query field storing the Id
         if(this.passRelatedRecord && this.relatedRecordId && this.relatedRecordId != ''){
+            console.log('field passed');
             this.externalFieldName = this.objectApiName + '.' + this.relatedRecordId;
         }
         // if not passing field as related Id, execute Mule callout
         else{
             console.log('No field passed...');
-            this.data = await fetchDataHelper(this.muleURIBase, '', '');
+            let result = await fetchDataHelper(this.muleURIBase, '', '');
+            
+            // extract column headers dynamically from first record
+            let cols = [];
+            let record = result[0];
+            for (let field in record){
+                cols.push({
+                    label: field,
+                    fieldName: field
+                });
+            }
+            this.columns = cols;
+            this.data = result;
             this.isLoaded = false;
         }
     }
