@@ -63,7 +63,7 @@ export default class MuleRelatedRecordsTable extends LightningElement {
         // if not passing field as related Id, execute Mule callout
         else{
             console.log('No field passed...');
-            this.data = await fetchDataHelper(this.muleURI, '');
+            this.data = await fetchDataHelper(this.muleURIBase, '', '');
             this.isLoaded = false;
         }
     }
