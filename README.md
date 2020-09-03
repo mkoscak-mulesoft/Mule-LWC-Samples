@@ -18,12 +18,13 @@ Find an example Mule API with formatting linked here: https://github.com/mkoscak
 <br/><br/>
 
 ## 1) Package Summary
-Currently there are 2 generic components for demonstration:<br/>
+Currently there are 2 generic components for demonstration that work as shown below.<br/>
+![](images/GenericComponents.png)<br/>
 **1) Related Info View (Single Record)**<br/>
-Use this to display a table of key value pairs.  This is best for displaying a single related record or a list of related information.<br/>
+Use this to display a table of key value pairs.  This is best for displaying a single related record or a list of related information (in my example an account's credit information).<br/>
 ![](images/RelatedSingle.png)
 **2) Related Table View (Multi/Child Records)**<br/>
-Use this to display a table of related values.  This is best for displaying a list of related records.
+Use this to display a table of related values.  This is best for displaying a list of related records (in my example a history of loan payments for a loan).
 ![](images/RelatedTable.png)<br/>
 <br/><br/>
 
