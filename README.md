@@ -66,7 +66,7 @@ This needs to return an array of 1 level deep json objects.  The table will use 
 ![](images/CloudHubCSP.png)
 <br/><br/>
 4) **CORS Config**<br/>
-Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately.  It can be done one of 2 ways.<br/><br/>
+This is done from your Mule API.  Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately.  It can be done one of 2 ways.<br/><br/>
 Option 1: Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource. 
 ![](images/CORS_APIM.png)<br/>
 Option 2: Manually return the appropriate headers in your Mule app.  Add the below headers to your HTTP response<br/>
