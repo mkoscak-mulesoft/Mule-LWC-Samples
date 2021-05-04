@@ -22,9 +22,7 @@ export default function fetchDataHelper( muleURI, externalField, muleURIExtended
             let row = obj[rowIndex];
             let record = {};
             for(let field in row ){
-                if(field == 'name' || field == 'rating' || field == 'phone' || field == 'price'){
-                    record[field.charAt(0).toUpperCase() + field.slice(1)] = row[field];
-                }
+                    record[field] = row[field];
             }
             data.push(record);
         }
